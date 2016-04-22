@@ -34,5 +34,14 @@ public class TestStringCalculator {
 		int shouldBeThree=sc.add("1,2");		
 		assertEquals(3, shouldBeThree);			
 	}
+	
+	
+	@Test
+	public void testManyNumbersReturnsTheSumOfThem() {
+		int shouldBeSix=sc.add("1,2,3");		
+		int shouldBeTen=sc.add("1,2,3,4");
+		assertEquals(6, shouldBeSix);			
+		assertEquals(10, shouldBeTen);
+	}
 
 }
