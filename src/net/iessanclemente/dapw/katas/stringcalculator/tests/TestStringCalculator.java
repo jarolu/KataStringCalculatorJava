@@ -43,5 +43,11 @@ public class TestStringCalculator {
 		assertEquals(6, shouldBeSix);			
 		assertEquals(10, shouldBeTen);
 	}
+	
+	@Test
+	public void testCRSepator() {
+		int shouldBeThree=sc.add("1\n2");		
+		assertEquals(3, shouldBeThree);			
+	}
 
 }
